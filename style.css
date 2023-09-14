@@ -1,0 +1,90 @@
+* {
+  margin: 0px;
+}
+
+.container {
+  background: linear-gradient(
+    6deg,
+    rgba(179, 226, 173, 1) 0%,
+    rgba(167, 211, 196, 1) 0%,
+    rgba(170, 214, 191, 1) 9%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  margin: 0 auto;
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+  padding: 60px;
+  font-family: "Amita", cursive;
+  height: 100vh;
+}
+
+.grid-titulo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 80px;
+}
+
+.astronauta {
+  width: 300px;
+}
+
+.parabens {
+  display: none;
+}
+
+.ativo {
+  display: block;
+  font-size: 5rem;
+  color: #f2a74b;
+  animation: animate 0.3s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0.9;
+  }
+}
+
+.titulo {
+  font-size: 5rem;
+  letter-spacing: 4px;
+  color: #3b5074;
+  font-weight: 800;
+  text-align: center;
+  width: 10ch;
+}
+
+.btn {
+  padding: 20px 40px;
+  border-radius: 6px;
+  background-color: #3965a7;
+  transition: 0.6s;
+  font-size: 4rem;
+  display: block;
+  font-family: "Staatliches", cursive;
+  color: white;
+}
+
+.btn:hover {
+  color: #f2f2f2;
+  cursor: pointer;
+  background-color: #3b5074;
+}
+
+.novo-sorteio {
+  display: none;
+}
+
+.novo-sorteio.ativado {
+  display: inline-block;
+}
